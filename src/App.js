@@ -36,6 +36,10 @@ const App = () => {
     setLeft(Math.floor(Math.random() * width))
   }
 
+  const onClick = () => {
+    alert("Wow! Congratulations!")
+  }
+
   return (
     <div
       style={hasHovered ? appStyleAfterHover : appStyle}
@@ -47,7 +51,7 @@ const App = () => {
         variant='light'
         size='sm'
         onMouseEnter={() => onHover()}
-        onClick={() => console.log('omg')}
+        onClick={() => onClick()}
       >
         Click to Enter
       </Button>
